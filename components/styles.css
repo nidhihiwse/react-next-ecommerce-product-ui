@@ -17,4 +17,17 @@
   .slick-next {
     right: -35px;
   }
+
+
+  .accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+  }
+  
+  .accordion-content.show {
+    max-height: 1000px; /* Set a maximum value to handle the expansion */
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
   
