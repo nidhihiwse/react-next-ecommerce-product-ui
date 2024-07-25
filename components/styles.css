@@ -1,0 +1,20 @@
+/* styles slick override css */
+
+.slick-prev:before, .slick-next:before {
+    color: #60cac7; /* Tailwind teal-500 color */
+    font-size: 35px;
+    opacity: 1; /* Make sure arrows are visible */
+  }
+  
+  .slick-prev:hover:before, .slick-next:hover:before {
+    color: #2c7a7b; /* Tailwind teal-700 color */
+  }
+  
+  .slick-prev {
+    left: -35px;
+  }
+  
+  .slick-next {
+    right: -35px;
+  }
+  
