@@ -1,15 +1,7 @@
 "use client";
 
 import React, { useState } from 'react';
-
-type AccordionItem = {
-  title: string;
-  content: string;
-};
-
-type AccordionProps = {
-  items: AccordionItem[];
-};
+import { AccordionProps } from './productDetails.types';
 
 const Accordion: React.FC<AccordionProps> = ({ items }) => {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
@@ -24,7 +16,7 @@ const Accordion: React.FC<AccordionProps> = ({ items }) => {
         <div key={index} className="border-t py-6">
           <button
             onClick={() => toggleAccordion(index)}
-            className="flex justify-between w-full px-4 py-2 text-left text-black focus:outline-none"
+            className="flex justify-between w-full py-2 text-left text-black focus:outline-none"
           >
             <span className="font-semibold">{item.title}</span>
             <span className="text-xl">
@@ -32,7 +24,7 @@ const Accordion: React.FC<AccordionProps> = ({ items }) => {
             </span>
           </button>
           <div className={`accordion-content ${activeIndex === index ? 'show' : ''}`}>
-            <div className="px-4 text-gray-500">{item.content}</div>
+            <div className="text-gray-500">{item.content}</div>
           </div>
         </div>
       ))}

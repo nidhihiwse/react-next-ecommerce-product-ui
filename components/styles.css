@@ -1,33 +1,50 @@
 /* styles slick override css */
 
 .slick-prev:before, .slick-next:before {
-    color: #60cac7; /* Tailwind teal-500 color */
-    font-size: 35px;
-    opacity: 1; /* Make sure arrows are visible */
-  }
+  color: #60cac7;
+  font-size: 35px;
+  opacity: 1;
+}
   
-  .slick-prev:hover:before, .slick-next:hover:before {
-    color: #2c7a7b; /* Tailwind teal-700 color */
-  }
-  
-  .slick-prev {
-    left: -35px;
+.slick-prev:hover:before, .slick-next:hover:before {
+color: #2c7a7b;
+}
+
+.slick-prev {
+    transform: translate(100%, -50%) ;
   }
   
   .slick-next {
-    right: -35px;
+    transform: translate(-100%, -50%) ;
   }
 
-
-  .accordion-content {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease-out, padding 0.3s ease-out;
-  }
+@media (max-width: 768px) {
+    .slick-prev, .slick-next {
+        display: none;
+    }
+}
   
-  .accordion-content.show {
-    max-height: 1000px; /* Set a maximum value to handle the expansion */
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+
+.slick-prev, .slick-next {
+    width: 40px ;
+    height: 40px ;
+    z-index: 1 ;
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+    top: 50% ;
   }
+
+.accordion-content {
+max-height: 0;
+overflow: hidden;
+transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+}
+
+.accordion-content.show {
+max-height: 1000px;
+padding-top: 1rem;
+padding-bottom: 1rem;
+}
+
   
