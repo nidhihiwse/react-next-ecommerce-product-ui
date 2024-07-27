@@ -13,10 +13,10 @@ const Product: React.FC = () => {
 
   const images = [
     "car-image-1.png",
-    "car-image-2.png",
-    "car-image-3.png",
-    "car-image-4.png",
-    "car-image-5.png",
+    "car-image-1.png",
+    "car-image-1.png",
+    "car-image-1.png",
+    "car-image-1.png",
   ];
 
   const accordionItems = [
