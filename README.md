@@ -1,4 +1,13 @@
+
+# Demo
+
+
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+
+![ecomerce-sample](https://github.com/user-attachments/assets/fc958faf-72c1-49ae-ad99-e16d7023957b)
+
 
 ## Getting Started
 
